@@ -15,7 +15,7 @@
 
 @synthesize pitchMap = _pitchMap;
 
-- (id)initWithRadius:(float)circleRadius andPitch:(float)startingPitch andShift:(int)shift andMultipleKeys:(BOOL)multipleKeys
+- (id)initWithRadius:(float)circleRadius andPitch:(float)startingPitch andShift:(int)shift
 {
     NSLog(@"initializing a MAGCircleArray");
     self = [super init];
@@ -131,18 +131,24 @@
      */
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    //moved to beginning of method
-    //NSString *keyString = [NSString stringWithFormat:@"pitchMapWithRadius%fandStartingPitch%f",circleRadius,startingPitch];
-    NSArray *thePitchMap = [prefs arrayForKey:keyString];
-    if (thePitchMap != NULL)
+    NSString *previousMapKey = [prefs stringForKey:@"previous map"];
+    NSArray *thePitchMap = [[NSArray alloc] init];
+    if ([previousMapKey isEqualToString:keyString])
     {
-        NSLog(@"thePitchMap != NULL");
+        NSLog(@"same as previous settings.  reloading pitchMap");
+        thePitchMap = [prefs arrayForKey:keyString];
     }
     else
     {
-        NSLog(@"thePitchMap == NULL");
+        NSLog(@"settings different from previously");
+        
+        if (previousMapKey != NULL)
+        {
+            NSLog(@"must delete");
+            [prefs setObject:NULL forKey:previousMapKey];
+        }
+        
         NSMutableArray *futurePitchMap = [[NSMutableArray alloc] init];
-        futurePitchMap = [[NSMutableArray alloc] init];
         NSMutableArray *slidePitchReference = [[NSMutableArray alloc] init];
         //c1 = (0,-r/2)
         //c2 = (0,3r/2)
@@ -368,8 +374,10 @@
         }
         NSLog(@"saving the pitchMap");
         thePitchMap = futurePitchMap;
+        [prefs setObject:keyString forKey:@"previous map"];
         [prefs setObject:thePitchMap forKey:keyString];
         [prefs synchronize];
+        NSLog(@"finished saving pitchMap");
     }
     
     _pitchMap = [[NSArray alloc] initWithArray:thePitchMap];

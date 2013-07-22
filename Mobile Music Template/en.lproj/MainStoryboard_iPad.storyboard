@@ -71,13 +71,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Multiple Keys:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SPV-TX-OhC">
-                                <rect key="frame" x="169" y="593" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="0NG-Bh-dkq">
                                 <rect key="frame" x="169" y="220" width="479" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,10 +111,6 @@
                                     <segment title="Large"/>
                                 </segments>
                             </segmentedControl>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="a3N-U6-gNK">
-                                <rect key="frame" x="169" y="656" width="79" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OGE-nv-ioF">
                                 <rect key="frame" x="326" y="825" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -143,7 +132,6 @@
                     <navigationItem key="navigationItem" id="abD-PT-70Z"/>
                     <connections>
                         <outlet property="keySwitch" destination="0NG-Bh-dkq" id="iFr-LA-3Jb"/>
-                        <outlet property="multipleKeySwitch" destination="a3N-U6-gNK" id="iJJ-Yt-X4V"/>
                         <outlet property="shiftSwitch" destination="Sbt-r2-4t0" id="bit-rM-EWC"/>
                         <outlet property="sizeSwitch" destination="J5I-Id-6J3" id="97v-dP-906"/>
                         <segue destination="2" kind="push" identifier="loadCanvas" id="vZ4-eS-fDA"/>

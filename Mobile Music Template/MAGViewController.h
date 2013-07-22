@@ -21,6 +21,4 @@
 
 @property float circleSize;
 
-@property BOOL multipleKeys;
-
 @end

@@ -45,6 +45,8 @@
             self.hasEnded = TRUE;
             MAGSample *firstSample = self.sampleArray[0];
             self.duration = [newSample.time timeIntervalSinceDate:firstSample.time];
+            //NSLog(@"length of gesture: %i samples",self.sampleArray.count);
+            //NSLog(@"duration of gesture: %f seconds",self.duration);
             //return an array with zero for the gain
             return [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:20],[NSNumber numberWithFloat:0.0], nil];
         }

@@ -10,7 +10,7 @@
 
 @interface MAGCircleArray : NSObject
 
-- (id)initWithRadius:(float)circleRadius andPitch:(float)startingPitch andShift:(int)shift andMultipleKeys:(BOOL)multipleKeys;
+- (id)initWithRadius:(float)circleRadius andPitch:(float)startingPitch andShift:(int)shift;
 
 - (NSArray *)giveCircleForCellAt:(int)horizontalCellIndex and:(int)verticalCellIndex;
 
