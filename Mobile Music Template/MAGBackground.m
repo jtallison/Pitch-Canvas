@@ -123,30 +123,6 @@
         }
     }
     CGContextStrokePath(context);
-    //note symbols
-    /*
-     int delta = 173;
-     CGContextMoveToPoint(context,63+delta,250);
-     CGContextAddLineToPoint(context,112+delta,250);
-     CGContextMoveToPoint(context,63+delta,260);
-     CGContextAddLineToPoint(context,112+delta,260);
-     CGContextMoveToPoint(context,63+delta,270);
-     CGContextAddLineToPoint(context,112+delta,270);
-     CGContextMoveToPoint(context,63+delta,280);
-     CGContextAddLineToPoint(context,112+delta,280);
-     CGContextMoveToPoint(context,63+delta,290);
-     CGContextAddLineToPoint(context,112+delta,290);
-     CGContextMoveToPoint(context,78+delta,300);
-     CGContextAddLineToPoint(context,98+delta,300);
-     CGContextMoveToPoint(context,93+delta,275);
-     CGContextAddLineToPoint(context,93+delta,300);
-     CGContextSetLineWidth(context, 2.0);
-     CGContextSetRGBStrokeColor(context, 0.0, 0.0, 0.0, 1.0);
-     CGContextStrokePath(context);
-     CGContextAddEllipseInRect(context, CGRectMake(81.0+delta, 295.0, 13.0, 11.0));
-     CGContextSetRGBFillColor(context, 0.0, 0.0, 0.0, 1.0);
-     CGContextFillPath(context);
-     */
 }
 
 @end
