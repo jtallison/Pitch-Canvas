@@ -1,7 +1,7 @@
-#N canvas 554 91 372 256 10;
+#N canvas 554 91 679 469 10;
 #X obj 59 -19 inlet;
 #X obj 255 -19 inlet;
-#X obj 123 184 outlet~;
+#X obj 123 213 outlet~;
 #X obj 59 8 mtof;
 #X obj 123 157 +~;
 #N canvas 519 251 566 573 main_sound 0;
@@ -80,7 +80,7 @@
 #X restore 59 97 pd main_sound;
 #X obj 59 35 t f f;
 #X obj 255 35 t f f;
-#N canvas 807 241 605 569 inital_sound 0;
+#N canvas 411 179 772 701 inital_sound 0;
 #X obj 130 29 inlet;
 #X obj 250 29 inlet;
 #X obj 130 463 line~;
@@ -154,13 +154,17 @@
 #X connect 30 0 15 0;
 #X connect 31 0 3 0;
 #X restore 195 97 pd inital_sound;
+#X obj 97 185 freeverb~;
 #X connect 0 0 3 0;
 #X connect 1 0 7 0;
 #X connect 3 0 6 0;
-#X connect 4 0 2 0;
+#X connect 4 0 9 1;
+#X connect 4 0 9 0;
 #X connect 5 0 4 0;
 #X connect 6 0 5 0;
 #X connect 6 1 8 0;
 #X connect 7 0 5 1;
 #X connect 7 1 8 1;
 #X connect 8 0 4 1;
+#X connect 9 0 2 0;
+#X connect 9 1 2 0;
