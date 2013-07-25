@@ -69,7 +69,7 @@
         //return the pitch and gain(speed) information.
         //will be sent to Pd
         NSArray *pitchMapRow = self.pitchMap[(int) newSample.location.x];
-        return [[NSArray alloc] initWithObjects:pitchMapRow[(int) newSample.location.y],[NSNumber numberWithFloat:gain], nil];
+        return [[NSArray alloc] initWithObjects:pitchMapRow[(int) newSample.location.y],[NSNumber numberWithFloat:gain],[NSNumber numberWithFloat:newSample.location.x/768.0],nil];
     }
     //NSLog(@"error: sample passed to a gesture that has ended");
     return [[NSArray alloc] init];

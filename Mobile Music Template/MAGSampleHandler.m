@@ -44,7 +44,7 @@
         float currentPitch = [pitchMapRow[(int) firstSample.location.y] floatValue];
         
         //tell view controller what index the new gesture is, and provide audio information
-        return [[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:currentPitch],[NSNumber numberWithFloat:0.01],[NSNumber numberWithInt:currentGestureIndex], nil];
+        return [[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:currentPitch],[NSNumber numberWithFloat:0.01],[NSNumber numberWithFloat:firstSample.location.x/768.0],[NSNumber numberWithInt:currentGestureIndex], nil];
     }
     else
     {

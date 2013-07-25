@@ -151,12 +151,13 @@
                                                                        andTime:[[NSDate alloc] init]
                                                                 andFirstSample:TRUE
                                                                  andLastSample:FALSE];
-                    NSArray *pitchAndGainAndIndex = [self.sampleHandler handleFirstSample:newSample];
-                    int newGestureIndex = [pitchAndGainAndIndex[2] intValue];
+                    NSArray *audioAndIndex = [self.sampleHandler handleFirstSample:newSample];
+                    int newGestureIndex = [[audioAndIndex lastObject] intValue];
                     [self.liveGestureIndeces replaceObjectAtIndex:0 withObject:[NSNumber numberWithInt:newGestureIndex]];
                     
-                    [PdBase sendFloat:[pitchAndGainAndIndex[0] floatValue] toReceiver:@"freq1"];
-                    [PdBase sendFloat:[pitchAndGainAndIndex[1] floatValue] toReceiver:@"gain1"];
+                    [PdBase sendFloat:[audioAndIndex[0] floatValue] toReceiver:@"freq1"];
+                    [PdBase sendFloat:[audioAndIndex[1] floatValue] toReceiver:@"gain1"];
+                    [PdBase sendFloat:[audioAndIndex[2] floatValue] toReceiver:@"rev1"];
                     self.isChannel1Open = FALSE;
                     //NSLog(@"added gesture to channel 1.  gesture index: %i",newGestureIndex);
                     //NSLog(@"liveGestureIndeces: = [%i,%i,%i,%i,%i,%i,%i,%i]",[self.liveGestureIndeces[0] intValue],[self.liveGestureIndeces[1] intValue],[self.liveGestureIndeces[2] intValue],[self.liveGestureIndeces[3] intValue],[self.liveGestureIndeces[4] intValue],[self.liveGestureIndeces[5] intValue],[self.liveGestureIndeces[6] intValue],[self.liveGestureIndeces[7] intValue]);
@@ -169,12 +170,13 @@
                                                                        andTime:[[NSDate alloc] init]
                                                                 andFirstSample:TRUE
                                                                  andLastSample:FALSE];
-                    NSArray *pitchAndGainAndIndex = [self.sampleHandler handleFirstSample:newSample];
-                    int newGestureIndex = [pitchAndGainAndIndex[2] intValue];
+                    NSArray *audioAndIndex = [self.sampleHandler handleFirstSample:newSample];
+                    int newGestureIndex = [[audioAndIndex lastObject] intValue];
                     [self.liveGestureIndeces replaceObjectAtIndex:1 withObject:[NSNumber numberWithInt:newGestureIndex]];
                     
-                    [PdBase sendFloat:[pitchAndGainAndIndex[0] floatValue] toReceiver:@"freq2"];
-                    [PdBase sendFloat:[pitchAndGainAndIndex[1] floatValue] toReceiver:@"gain2"];
+                    [PdBase sendFloat:[audioAndIndex[0] floatValue] toReceiver:@"freq2"];
+                    [PdBase sendFloat:[audioAndIndex[1] floatValue] toReceiver:@"gain2"];
+                    [PdBase sendFloat:[audioAndIndex[2] floatValue] toReceiver:@"rev2"];
                     //NSLog(@"freq2: %f, gain2: %f",[pitchAndGainAndIndex[0] floatValue],[pitchAndGainAndIndex[1] floatValue]);
                     self.isChannel2Open = FALSE;
                     //NSLog(@"adding a gesture in channel 2.  gesture index: %i",newGestureIndex);
@@ -188,12 +190,13 @@
                                                                        andTime:[[NSDate alloc] init]
                                                                 andFirstSample:TRUE
                                                                  andLastSample:FALSE];
-                    NSArray *pitchAndGainAndIndex = [self.sampleHandler handleFirstSample:newSample];
-                    int newGestureIndex = [pitchAndGainAndIndex[2] intValue];
+                    NSArray *audioAndIndex = [self.sampleHandler handleFirstSample:newSample];
+                    int newGestureIndex = [[audioAndIndex lastObject] intValue];
                     [self.liveGestureIndeces replaceObjectAtIndex:2 withObject:[NSNumber numberWithInt:newGestureIndex]];
                     
-                    [PdBase sendFloat:[pitchAndGainAndIndex[0] floatValue] toReceiver:@"freq3"];
-                    [PdBase sendFloat:[pitchAndGainAndIndex[1] floatValue] toReceiver:@"gain3"];
+                    [PdBase sendFloat:[audioAndIndex[0] floatValue] toReceiver:@"freq3"];
+                    [PdBase sendFloat:[audioAndIndex[1] floatValue] toReceiver:@"gain3"];
+                    [PdBase sendFloat:[audioAndIndex[2] floatValue] toReceiver:@"rev3"];
                     self.isChannel3Open = FALSE;
                     //NSLog(@"adding a gesture in channel 3.  gesture index: %i",newGestureIndex);
                     //NSLog(@"liveGestureIndeces: = [%i,%i,%i,%i,%i,%i,%i,%i]",[self.liveGestureIndeces[0] intValue],[self.liveGestureIndeces[1] intValue],[self.liveGestureIndeces[2] intValue],[self.liveGestureIndeces[3] intValue],[self.liveGestureIndeces[4] intValue],[self.liveGestureIndeces[5] intValue],[self.liveGestureIndeces[6] intValue],[self.liveGestureIndeces[7] intValue]);
@@ -206,12 +209,13 @@
                                                                        andTime:[[NSDate alloc] init]
                                                                 andFirstSample:TRUE
                                                                  andLastSample:FALSE];
-                    NSArray *pitchAndGainAndIndex = [self.sampleHandler handleFirstSample:newSample];
-                    int newGestureIndex = [pitchAndGainAndIndex[2] intValue];
+                    NSArray *audioAndIndex = [self.sampleHandler handleFirstSample:newSample];
+                    int newGestureIndex = [[audioAndIndex lastObject] intValue];
                     [self.liveGestureIndeces replaceObjectAtIndex:3 withObject:[NSNumber numberWithInt:newGestureIndex]];
                     
-                    [PdBase sendFloat:[pitchAndGainAndIndex[0] floatValue] toReceiver:@"freq4"];
-                    [PdBase sendFloat:[pitchAndGainAndIndex[1] floatValue] toReceiver:@"gain4"];
+                    [PdBase sendFloat:[audioAndIndex[0] floatValue] toReceiver:@"freq4"];
+                    [PdBase sendFloat:[audioAndIndex[1] floatValue] toReceiver:@"gain4"];
+                    [PdBase sendFloat:[audioAndIndex[2] floatValue] toReceiver:@"rev4"];
                     self.isChannel4Open = FALSE;
                     //NSLog(@"adding a gesture in channel 4.  gesture index: %i",newGestureIndex);
                     //NSLog(@"liveGestureIndeces: = [%i,%i,%i,%i,%i,%i,%i,%i]",[self.liveGestureIndeces[0] intValue],[self.liveGestureIndeces[1] intValue],[self.liveGestureIndeces[2] intValue],[self.liveGestureIndeces[3] intValue],[self.liveGestureIndeces[4] intValue],[self.liveGestureIndeces[5] intValue],[self.liveGestureIndeces[6] intValue],[self.liveGestureIndeces[7] intValue]);
@@ -224,12 +228,13 @@
                                                                        andTime:[[NSDate alloc] init]
                                                                 andFirstSample:TRUE
                                                                  andLastSample:FALSE];
-                    NSArray *pitchAndGainAndIndex = [self.sampleHandler handleFirstSample:newSample];
-                    int newGestureIndex = [pitchAndGainAndIndex[2] intValue];
+                    NSArray *audioAndIndex = [self.sampleHandler handleFirstSample:newSample];
+                    int newGestureIndex = [[audioAndIndex lastObject] intValue];
                     [self.liveGestureIndeces replaceObjectAtIndex:4 withObject:[NSNumber numberWithInt:newGestureIndex]];
                     
-                    [PdBase sendFloat:[pitchAndGainAndIndex[0] floatValue] toReceiver:@"freq5"];
-                    [PdBase sendFloat:[pitchAndGainAndIndex[1] floatValue] toReceiver:@"gain5"];
+                    [PdBase sendFloat:[audioAndIndex[0] floatValue] toReceiver:@"freq5"];
+                    [PdBase sendFloat:[audioAndIndex[1] floatValue] toReceiver:@"gain5"];
+                    [PdBase sendFloat:[audioAndIndex[2] floatValue] toReceiver:@"rev5"];
                     self.isChannel5Open = FALSE;
                     //NSLog(@"adding a gesture in channel 5.  gesture index: %i",newGestureIndex);
                     //NSLog(@"liveGestureIndeces: = [%i,%i,%i,%i,%i,%i,%i,%i]",[self.liveGestureIndeces[0] intValue],[self.liveGestureIndeces[1] intValue],[self.liveGestureIndeces[2] intValue],[self.liveGestureIndeces[3] intValue],[self.liveGestureIndeces[4] intValue],[self.liveGestureIndeces[5] intValue],[self.liveGestureIndeces[6] intValue],[self.liveGestureIndeces[7] intValue]);
@@ -242,12 +247,13 @@
                                                                        andTime:[[NSDate alloc] init]
                                                                 andFirstSample:TRUE
                                                                  andLastSample:FALSE];
-                    NSArray *pitchAndGainAndIndex = [self.sampleHandler handleFirstSample:newSample];
-                    int newGestureIndex = [pitchAndGainAndIndex[2] intValue];
+                    NSArray *audioAndIndex = [self.sampleHandler handleFirstSample:newSample];
+                    int newGestureIndex = [[audioAndIndex lastObject] intValue];
                     [self.liveGestureIndeces replaceObjectAtIndex:5 withObject:[NSNumber numberWithInt:newGestureIndex]];
                     
-                    [PdBase sendFloat:[pitchAndGainAndIndex[0] floatValue] toReceiver:@"freq6"];
-                    [PdBase sendFloat:[pitchAndGainAndIndex[1] floatValue] toReceiver:@"gain6"];
+                    [PdBase sendFloat:[audioAndIndex[0] floatValue] toReceiver:@"freq6"];
+                    [PdBase sendFloat:[audioAndIndex[1] floatValue] toReceiver:@"gain6"];
+                    [PdBase sendFloat:[audioAndIndex[2] floatValue] toReceiver:@"rev6"];
                     self.isChannel6Open = FALSE;
                     //NSLog(@"adding a gesture in channel 6.  gesture index: %i",newGestureIndex);
                     //NSLog(@"liveGestureIndeces: = [%i,%i,%i,%i,%i,%i,%i,%i]",[self.liveGestureIndeces[0] intValue],[self.liveGestureIndeces[1] intValue],[self.liveGestureIndeces[2] intValue],[self.liveGestureIndeces[3] intValue],[self.liveGestureIndeces[4] intValue],[self.liveGestureIndeces[5] intValue],[self.liveGestureIndeces[6] intValue],[self.liveGestureIndeces[7] intValue]);
@@ -260,12 +266,13 @@
                                                                        andTime:[[NSDate alloc] init]
                                                                 andFirstSample:TRUE
                                                                  andLastSample:FALSE];
-                    NSArray *pitchAndGainAndIndex = [self.sampleHandler handleFirstSample:newSample];
-                    int newGestureIndex = [pitchAndGainAndIndex[2] intValue];
+                    NSArray *audioAndIndex = [self.sampleHandler handleFirstSample:newSample];
+                    int newGestureIndex = [[audioAndIndex lastObject] intValue];
                     [self.liveGestureIndeces replaceObjectAtIndex:6 withObject:[NSNumber numberWithInt:newGestureIndex]];
                     
-                    [PdBase sendFloat:[pitchAndGainAndIndex[0] floatValue] toReceiver:@"freq7"];
-                    [PdBase sendFloat:[pitchAndGainAndIndex[1] floatValue] toReceiver:@"gain7"];
+                    [PdBase sendFloat:[audioAndIndex[0] floatValue] toReceiver:@"freq7"];
+                    [PdBase sendFloat:[audioAndIndex[1] floatValue] toReceiver:@"gain7"];
+                    [PdBase sendFloat:[audioAndIndex[2] floatValue] toReceiver:@"rev7"];
                     self.isChannel7Open = FALSE;
                     //NSLog(@"adding a gesture in channel 7.  gesture index: %i",newGestureIndex);
                     //NSLog(@"liveGestureIndeces: = [%i,%i,%i,%i,%i,%i,%i,%i]",[self.liveGestureIndeces[0] intValue],[self.liveGestureIndeces[1] intValue],[self.liveGestureIndeces[2] intValue],[self.liveGestureIndeces[3] intValue],[self.liveGestureIndeces[4] intValue],[self.liveGestureIndeces[5] intValue],[self.liveGestureIndeces[6] intValue],[self.liveGestureIndeces[7] intValue]);
@@ -278,12 +285,13 @@
                                                                        andTime:[[NSDate alloc] init]
                                                                 andFirstSample:TRUE
                                                                  andLastSample:FALSE];
-                    NSArray *pitchAndGainAndIndex = [self.sampleHandler handleFirstSample:newSample];
-                    int newGestureIndex = [pitchAndGainAndIndex[2] intValue];
+                    NSArray *audioAndIndex = [self.sampleHandler handleFirstSample:newSample];
+                    int newGestureIndex = [[audioAndIndex lastObject] intValue];
                     [self.liveGestureIndeces replaceObjectAtIndex:7 withObject:[NSNumber numberWithInt:newGestureIndex]];
                     
-                    [PdBase sendFloat:[pitchAndGainAndIndex[0] floatValue] toReceiver:@"freq8"];
-                    [PdBase sendFloat:[pitchAndGainAndIndex[1] floatValue] toReceiver:@"gain8"];
+                    [PdBase sendFloat:[audioAndIndex[0] floatValue] toReceiver:@"freq8"];
+                    [PdBase sendFloat:[audioAndIndex[1] floatValue] toReceiver:@"gain8"];
+                    [PdBase sendFloat:[audioAndIndex[2] floatValue] toReceiver:@"rev8"];
                     self.isChannel8Open = FALSE;
                     //NSLog(@"adding a gesture in channel 8.  gesture index: %i",newGestureIndex);
                     //NSLog(@"liveGestureIndeces: = [%i,%i,%i,%i,%i,%i,%i,%i]",[self.liveGestureIndeces[0] intValue],[self.liveGestureIndeces[1] intValue],[self.liveGestureIndeces[2] intValue],[self.liveGestureIndeces[3] intValue],[self.liveGestureIndeces[4] intValue],[self.liveGestureIndeces[5] intValue],[self.liveGestureIndeces[6] intValue],[self.liveGestureIndeces[7] intValue]);
@@ -319,12 +327,13 @@
                                                                 andFirstSample:FALSE
                                                                  andLastSample:FALSE];
                     //find the pitch and the gain while sending the sample to self.sampleHandler (which will add the sample to the relevant gesture)
-                    NSArray *pitchAndGain = [self.sampleHandler handleSample:newSample
+                    NSArray *audioArray = [self.sampleHandler handleSample:newSample
                                                                    inGesture:[self.liveGestureIndeces[0] intValue]];
-                    if (pitchAndGain.count > 0)
+                    if (audioArray.count > 0)
                     {
-                        [PdBase sendFloat:[pitchAndGain[0] floatValue] toReceiver:@"freq1"];
-                        [PdBase sendFloat:[pitchAndGain[1] floatValue] toReceiver:@"gain1"];
+                        [PdBase sendFloat:[audioArray[0] floatValue] toReceiver:@"freq1"];
+                        [PdBase sendFloat:[audioArray[1] floatValue] toReceiver:@"gain1"];
+                        [PdBase sendFloat:[audioArray[2] floatValue] toReceiver:@"rev1"];
                     }
                 }
             }
@@ -340,12 +349,13 @@
                                                                 andFirstSample:FALSE
                                                                  andLastSample:FALSE];
                     //find the pitch and the gain while sending the sample to self.sampleHandler (which will add the sample to the relevant gesture)
-                    NSArray *pitchAndGain = [self.sampleHandler handleSample:newSample
+                    NSArray *audioArray = [self.sampleHandler handleSample:newSample
                                                                    inGesture:[self.liveGestureIndeces[1] intValue]];
-                    if (pitchAndGain.count > 0)
+                    if (audioArray.count > 0)
                     {
-                        [PdBase sendFloat:[pitchAndGain[0] floatValue] toReceiver:@"freq2"];
-                        [PdBase sendFloat:[pitchAndGain[1] floatValue] toReceiver:@"gain2"];
+                        [PdBase sendFloat:[audioArray[0] floatValue] toReceiver:@"freq2"];
+                        [PdBase sendFloat:[audioArray[1] floatValue] toReceiver:@"gain2"];
+                        [PdBase sendFloat:[audioArray[2] floatValue] toReceiver:@"rev2"];
                     }
                 }
             }
@@ -361,12 +371,13 @@
                                                                 andFirstSample:FALSE
                                                                  andLastSample:FALSE];
                     //find the pitch and the gain while sending the sample to self.sampleHandler (which will add the sample to the relevant gesture)
-                    NSArray *pitchAndGain = [self.sampleHandler handleSample:newSample
+                    NSArray *audioArray = [self.sampleHandler handleSample:newSample
                                                                    inGesture:[self.liveGestureIndeces[2] intValue]];
-                    if (pitchAndGain.count > 0)
+                    if (audioArray.count > 0)
                     {
-                        [PdBase sendFloat:[pitchAndGain[0] floatValue] toReceiver:@"freq3"];
-                        [PdBase sendFloat:[pitchAndGain[1] floatValue] toReceiver:@"gain3"];
+                        [PdBase sendFloat:[audioArray[0] floatValue] toReceiver:@"freq3"];
+                        [PdBase sendFloat:[audioArray[1] floatValue] toReceiver:@"gain3"];
+                        [PdBase sendFloat:[audioArray[2] floatValue] toReceiver:@"rev3"];
                     }
                 }
             }
@@ -382,12 +393,13 @@
                                                                 andFirstSample:FALSE
                                                                  andLastSample:FALSE];
                     //find the pitch and the gain while sending the sample to self.sampleHandler (which will add the sample to the relevant gesture)
-                    NSArray *pitchAndGain = [self.sampleHandler handleSample:newSample
+                    NSArray *audioArray = [self.sampleHandler handleSample:newSample
                                                                    inGesture:[self.liveGestureIndeces[3] intValue]];
-                    if (pitchAndGain.count > 0)
+                    if (audioArray.count > 0)
                     {
-                        [PdBase sendFloat:[pitchAndGain[0] floatValue] toReceiver:@"freq4"];
-                        [PdBase sendFloat:[pitchAndGain[1] floatValue] toReceiver:@"gain4"];
+                        [PdBase sendFloat:[audioArray[0] floatValue] toReceiver:@"freq4"];
+                        [PdBase sendFloat:[audioArray[1] floatValue] toReceiver:@"gain4"];
+                        [PdBase sendFloat:[audioArray[2] floatValue] toReceiver:@"rev4"];
                     }
                 }
             }
@@ -403,12 +415,13 @@
                                                                 andFirstSample:FALSE
                                                                  andLastSample:FALSE];
                     //find the pitch and the gain while sending the sample to self.sampleHandler (which will add the sample to the relevant gesture)
-                    NSArray *pitchAndGain = [self.sampleHandler handleSample:newSample
+                    NSArray *audioArray = [self.sampleHandler handleSample:newSample
                                                                    inGesture:[self.liveGestureIndeces[4] intValue]];
-                    if (pitchAndGain.count > 0)
+                    if (audioArray.count > 0)
                     {
-                        [PdBase sendFloat:[pitchAndGain[0] floatValue] toReceiver:@"freq5"];
-                        [PdBase sendFloat:[pitchAndGain[1] floatValue] toReceiver:@"gain5"];
+                        [PdBase sendFloat:[audioArray[0] floatValue] toReceiver:@"freq5"];
+                        [PdBase sendFloat:[audioArray[1] floatValue] toReceiver:@"gain5"];
+                        [PdBase sendFloat:[audioArray[2] floatValue] toReceiver:@"rev5"];
                     }
                 }
             }
@@ -424,12 +437,13 @@
                                                                 andFirstSample:FALSE
                                                                  andLastSample:FALSE];
                     //find the pitch and the gain while sending the sample to self.sampleHandler (which will add the sample to the relevant gesture)
-                    NSArray *pitchAndGain = [self.sampleHandler handleSample:newSample
+                    NSArray *audioArray = [self.sampleHandler handleSample:newSample
                                                                    inGesture:[self.liveGestureIndeces[5] intValue]];
-                    if (pitchAndGain.count > 0)
+                    if (audioArray.count > 0)
                     {
-                        [PdBase sendFloat:[pitchAndGain[0] floatValue] toReceiver:@"freq6"];
-                        [PdBase sendFloat:[pitchAndGain[1] floatValue] toReceiver:@"gain6"];
+                        [PdBase sendFloat:[audioArray[0] floatValue] toReceiver:@"freq6"];
+                        [PdBase sendFloat:[audioArray[1] floatValue] toReceiver:@"gain6"];
+                        [PdBase sendFloat:[audioArray[2] floatValue] toReceiver:@"rev6"];
                     }
                 }
             }
@@ -445,12 +459,13 @@
                                                                 andFirstSample:FALSE
                                                                  andLastSample:FALSE];
                     //find the pitch and the gain while sending the sample to self.sampleHandler (which will add the sample to the relevant gesture)
-                    NSArray *pitchAndGain = [self.sampleHandler handleSample:newSample
+                    NSArray *audioArray = [self.sampleHandler handleSample:newSample
                                                                    inGesture:[self.liveGestureIndeces[6] intValue]];
-                    if (pitchAndGain.count > 0)
+                    if (audioArray.count > 0)
                     {
-                        [PdBase sendFloat:[pitchAndGain[0] floatValue] toReceiver:@"freq7"];
-                        [PdBase sendFloat:[pitchAndGain[1] floatValue] toReceiver:@"gain7"];
+                        [PdBase sendFloat:[audioArray[0] floatValue] toReceiver:@"freq7"];
+                        [PdBase sendFloat:[audioArray[1] floatValue] toReceiver:@"gain7"];
+                        [PdBase sendFloat:[audioArray[2] floatValue] toReceiver:@"rev7"];
                     }
                 }
             }
@@ -466,12 +481,13 @@
                                                                 andFirstSample:FALSE
                                                                  andLastSample:FALSE];
                     //find the pitch and the gain while sending the sample to self.sampleHandler (which will add the sample to the relevant gesture)
-                    NSArray *pitchAndGain = [self.sampleHandler handleSample:newSample
+                    NSArray *audioArray = [self.sampleHandler handleSample:newSample
                                                                    inGesture:[self.liveGestureIndeces[7] intValue]];
-                    if (pitchAndGain.count > 0)
+                    if (audioArray.count > 0)
                     {
-                        [PdBase sendFloat:[pitchAndGain[0] floatValue] toReceiver:@"freq8"];
-                        [PdBase sendFloat:[pitchAndGain[1] floatValue] toReceiver:@"gain8"];
+                        [PdBase sendFloat:[audioArray[0] floatValue] toReceiver:@"freq8"];
+                        [PdBase sendFloat:[audioArray[1] floatValue] toReceiver:@"gain8"];
+                        [PdBase sendFloat:[audioArray[2] floatValue] toReceiver:@"rev8"];
                     }
                 }
             }
