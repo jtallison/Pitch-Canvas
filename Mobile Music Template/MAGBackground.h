@@ -15,4 +15,8 @@
 
 @property (weak, nonatomic) NSMutableArray *allGestures;
 
+@property (weak, nonatomic) NSArray *liveGestureIndeces;
+
+@property (strong, nonatomic) UIImage *backgroundImage;
+
 @end

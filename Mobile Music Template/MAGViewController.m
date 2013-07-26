@@ -13,6 +13,7 @@
 #import "CoreGraphics/CoreGraphics.h"
 #import "MAGSample.h"
 #import "MAGSampleHandler.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MAGViewController ()
 
@@ -122,6 +123,7 @@
     [self.theBackground setNeedsDisplay];
     self.liveTouches = CFArrayCreateMutable(NULL, 8, &kCFTypeArrayCallBacks);
     self.liveGestureIndeces = [[NSMutableArray alloc] initWithObjects:[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1],[NSNumber numberWithInt:-1], nil];
+    self.theBackground.liveGestureIndeces = self.liveGestureIndeces;
     NSLog(@"initialization complete");
 }
 
@@ -131,11 +133,6 @@
         //for each of the audio channels:
             //if it is open, create a new gesture and close the channel. store the gesture index.
             //stop checking for an audio channel for this gesture
-    
-    if ((self.circles == NULL) && (self.liveGestureIndeces == NULL) && (self.liveTouches == NULL))
-    {
-        
-    }
     
     if ([touches count] > 0)
     {
@@ -303,7 +300,6 @@
             }
         }
     }
-    //[self.theBackground setNeedsDisplay];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -493,7 +489,11 @@
             }
         }
     }
-    //[self.theBackground setNeedsDisplay];
+    UIGraphicsBeginImageContext(self.theBackground.bounds.size);
+    [self.theBackground.layer renderInContext:UIGraphicsGetCurrentContext()];
+    self.theBackground.backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [self.theBackground setNeedsDisplay];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -598,7 +598,6 @@
             }
         }
     }
-    //[self.theBackground setNeedsDisplay];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
@@ -703,7 +702,6 @@
             }
         }
     }
-    //[self.theBackground setNeedsDisplay];
 }
 
 - (void)viewDidUnload {
