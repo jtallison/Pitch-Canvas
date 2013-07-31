@@ -489,11 +489,13 @@
             }
         }
     }
+    /*
     UIGraphicsBeginImageContext(self.theBackground.bounds.size);
     [self.theBackground.layer renderInContext:UIGraphicsGetCurrentContext()];
     self.theBackground.backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     [self.theBackground setNeedsDisplay];
+     */
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event

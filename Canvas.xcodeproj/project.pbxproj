@@ -40,6 +40,7 @@
 		3A9C0FB017835E4A00221F62 /* MAGBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C0FAF17835E4A00221F62 /* MAGBackground.m */; };
 		3AA9D8AF17A06D8E00E0DE70 /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA9D8AE17A06D8E00E0DE70 /* 144x144.png */; };
 		3AA9D8B117A06F9600E0DE70 /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA9D8B017A06F9600E0DE70 /* 72x72.png */; };
+		3AB75F7417A86145007A6A62 /* MAGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7317A86145007A6A62 /* MAGNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,8 @@
 		3A9C0FAF17835E4A00221F62 /* MAGBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGBackground.m; sourceTree = "<group>"; };
 		3AA9D8AE17A06D8E00E0DE70 /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144x144.png; sourceTree = "<group>"; };
 		3AA9D8B017A06F9600E0DE70 /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
+		3AB75F7217A86145007A6A62 /* MAGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGNavigationController.h; sourceTree = "<group>"; };
+		3AB75F7317A86145007A6A62 /* MAGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,8 @@
 				3715B95A162F23330026E296 /* MainStoryboard_iPhone.storyboard */,
 				3715B95D162F23330026E296 /* MainStoryboard_iPad.storyboard */,
 				3A89562F1799BEF000788E9D /* MAGMainViewController.h */,
+				3AB75F7217A86145007A6A62 /* MAGNavigationController.h */,
+				3AB75F7317A86145007A6A62 /* MAGNavigationController.m */,
 				3A8956301799BEF000788E9D /* MAGMainViewController.m */,
 				3715B960162F23330026E296 /* MAGViewController.h */,
 				3715B961162F23330026E296 /* MAGViewController.m */,
@@ -410,6 +415,7 @@
 				3A89378B178600C9005AD710 /* MAGCircleArray.m in Sources */,
 				3A875F79178740C70053955D /* MAGGesture.m in Sources */,
 				3A8956311799BEF000788E9D /* MAGMainViewController.m in Sources */,
+				3AB75F7417A86145007A6A62 /* MAGNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

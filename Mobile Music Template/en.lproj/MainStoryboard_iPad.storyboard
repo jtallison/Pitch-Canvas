@@ -7,7 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Zsm-8l-Z4d">
             <objects>
-                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="wce-Ye-8hh" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="wce-Ye-8hh" customClass="MAGNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="avN-62-Jc8">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -142,6 +142,30 @@
             <point key="canvasLocation" x="-889" y="-101"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MAGBackground" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAGBackground.h"/>
+        </class>
+        <class className="MAGMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAGMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="loadCanvas"/>
+                <relationship kind="outlet" name="keySwitch" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="shiftSwitch" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="sizeSwitch" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="MAGNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAGNavigationController.h"/>
+        </class>
+        <class className="MAGViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MAGViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="handleLongPress:" candidateClass="UILongPressGestureRecognizer"/>
+                <relationship kind="outlet" name="theBackground" candidateClass="MAGBackground"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
