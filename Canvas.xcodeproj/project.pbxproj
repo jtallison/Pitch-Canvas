@@ -28,7 +28,6 @@
 		3715B9A2162F42C70026E296 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715B9A1162F42C70026E296 /* AudioToolbox.framework */; };
 		3715B9A4162F42CD0026E296 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715B9A3162F42CD0026E296 /* AVFoundation.framework */; };
 		3A559D7F177DE8720035B7EF /* MAGCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A559D7E177DE8720035B7EF /* MAGCircle.m */; };
-		3A6B371417A19441002DC520 /* reverb.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B371317A19441002DC520 /* reverb.pd */; };
 		3A6B371717A19526002DC520 /* canvas_audio_generator.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B371517A19526002DC520 /* canvas_audio_generator.pd */; };
 		3A6B371817A19526002DC520 /* mag_template.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B371617A19526002DC520 /* mag_template.pd */; };
 		3A6B371C17A1A396002DC520 /* rev2~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B371B17A1A396002DC520 /* rev2~.pd */; };
@@ -41,6 +40,23 @@
 		3AA9D8AF17A06D8E00E0DE70 /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA9D8AE17A06D8E00E0DE70 /* 144x144.png */; };
 		3AA9D8B117A06F9600E0DE70 /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA9D8B017A06F9600E0DE70 /* 72x72.png */; };
 		3AB75F7417A86145007A6A62 /* MAGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7317A86145007A6A62 /* MAGNavigationController.m */; };
+		3AB75F7617AAAA95007A6A62 /* overdrive.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7517AAAA95007A6A62 /* overdrive.c */; };
+		3AB75F7B17AAC08D007A6A62 /* overdrive~.pd_darwin in Resources */ = {isa = PBXBuildFile; fileRef = 3AB75F7A17AAC08D007A6A62 /* overdrive~.pd_darwin */; };
+		3AB75F7C17AAC12C007A6A62 /* overdrive~.pd_darwin in Resources */ = {isa = PBXBuildFile; fileRef = 3AB75F7A17AAC08D007A6A62 /* overdrive~.pd_darwin */; };
+		3AB75F8517AAC1EA007A6A62 /* loud.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7D17AAC1EA007A6A62 /* loud.c */; };
+		3AB75F8617AAC1EA007A6A62 /* m_pd.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7F17AAC1EA007A6A62 /* m_pd.c */; };
+		3AB75F8717AAC1EA007A6A62 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F8117AAC1EA007A6A62 /* shared.c */; };
+		3AB75F8817AAC1EA007A6A62 /* sic.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F8317AAC1EA007A6A62 /* sic.c */; };
+		3AB75F8917AAC453007A6A62 /* sic.c in Resources */ = {isa = PBXBuildFile; fileRef = 3AB75F8317AAC1EA007A6A62 /* sic.c */; };
+		3AB75F8A17AAC457007A6A62 /* sic.h in Resources */ = {isa = PBXBuildFile; fileRef = 3AB75F8417AAC1EA007A6A62 /* sic.h */; };
+		3AB75F8B17AAC4FD007A6A62 /* loud.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7D17AAC1EA007A6A62 /* loud.c */; };
+		3AB75F8C17AAC500007A6A62 /* loud.h in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7E17AAC1EA007A6A62 /* loud.h */; };
+		3AB75F8D17AAC502007A6A62 /* m_pd.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7F17AAC1EA007A6A62 /* m_pd.c */; };
+		3AB75F8E17AAC506007A6A62 /* m_pd.h in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F8017AAC1EA007A6A62 /* m_pd.h */; };
+		3AB75F8F17AAC509007A6A62 /* shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F8117AAC1EA007A6A62 /* shared.c */; };
+		3AB75F9017AAC50C007A6A62 /* shared.h in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F8217AAC1EA007A6A62 /* shared.h */; };
+		3AB75F9117AAC50F007A6A62 /* sic.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F8317AAC1EA007A6A62 /* sic.c */; };
+		3AB75F9217AAC511007A6A62 /* sic.h in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F8417AAC1EA007A6A62 /* sic.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +119,6 @@
 		3715B9A3162F42CD0026E296 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3A559D7D177DE8720035B7EF /* MAGCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGCircle.h; sourceTree = "<group>"; };
 		3A559D7E177DE8720035B7EF /* MAGCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGCircle.m; sourceTree = "<group>"; };
-		3A6B371317A19441002DC520 /* reverb.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reverb.pd; sourceTree = "<group>"; };
 		3A6B371517A19526002DC520 /* canvas_audio_generator.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = canvas_audio_generator.pd; sourceTree = "<group>"; };
 		3A6B371617A19526002DC520 /* mag_template.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mag_template.pd; sourceTree = "<group>"; };
 		3A6B371B17A1A396002DC520 /* rev2~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev2~.pd"; sourceTree = "<group>"; };
@@ -123,6 +138,16 @@
 		3AA9D8B017A06F9600E0DE70 /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
 		3AB75F7217A86145007A6A62 /* MAGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGNavigationController.h; sourceTree = "<group>"; };
 		3AB75F7317A86145007A6A62 /* MAGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGNavigationController.m; sourceTree = "<group>"; };
+		3AB75F7517AAAA95007A6A62 /* overdrive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = overdrive.c; sourceTree = "<group>"; };
+		3AB75F7A17AAC08D007A6A62 /* overdrive~.pd_darwin */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "overdrive~.pd_darwin"; sourceTree = "<group>"; };
+		3AB75F7D17AAC1EA007A6A62 /* loud.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loud.c; sourceTree = "<group>"; };
+		3AB75F7E17AAC1EA007A6A62 /* loud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loud.h; sourceTree = "<group>"; };
+		3AB75F7F17AAC1EA007A6A62 /* m_pd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = m_pd.c; sourceTree = "<group>"; };
+		3AB75F8017AAC1EA007A6A62 /* m_pd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_pd.h; sourceTree = "<group>"; };
+		3AB75F8117AAC1EA007A6A62 /* shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shared.c; sourceTree = "<group>"; };
+		3AB75F8217AAC1EA007A6A62 /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
+		3AB75F8317AAC1EA007A6A62 /* sic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sic.c; sourceTree = "<group>"; };
+		3AB75F8417AAC1EA007A6A62 /* sic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sic.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,9 +219,9 @@
 				3715B952162F23330026E296 /* MAGAppDelegate.m */,
 				3715B95A162F23330026E296 /* MainStoryboard_iPhone.storyboard */,
 				3715B95D162F23330026E296 /* MainStoryboard_iPad.storyboard */,
-				3A89562F1799BEF000788E9D /* MAGMainViewController.h */,
 				3AB75F7217A86145007A6A62 /* MAGNavigationController.h */,
 				3AB75F7317A86145007A6A62 /* MAGNavigationController.m */,
+				3A89562F1799BEF000788E9D /* MAGMainViewController.h */,
 				3A8956301799BEF000788E9D /* MAGMainViewController.m */,
 				3715B960162F23330026E296 /* MAGViewController.h */,
 				3715B961162F23330026E296 /* MAGViewController.m */,
@@ -222,8 +247,17 @@
 			children = (
 				3A6B371517A19526002DC520 /* canvas_audio_generator.pd */,
 				3A6B371617A19526002DC520 /* mag_template.pd */,
-				3A6B371317A19441002DC520 /* reverb.pd */,
+				3AB75F7D17AAC1EA007A6A62 /* loud.c */,
+				3AB75F7E17AAC1EA007A6A62 /* loud.h */,
+				3AB75F7F17AAC1EA007A6A62 /* m_pd.c */,
+				3AB75F8017AAC1EA007A6A62 /* m_pd.h */,
+				3AB75F8117AAC1EA007A6A62 /* shared.c */,
+				3AB75F8217AAC1EA007A6A62 /* shared.h */,
+				3AB75F8317AAC1EA007A6A62 /* sic.c */,
+				3AB75F8417AAC1EA007A6A62 /* sic.h */,
 				3715B94A162F23330026E296 /* Canvas-Info.plist */,
+				3AB75F7A17AAC08D007A6A62 /* overdrive~.pd_darwin */,
+				3AB75F7517AAAA95007A6A62 /* overdrive.c */,
 				3A6B371B17A1A396002DC520 /* rev2~.pd */,
 				3715B94B162F23330026E296 /* InfoPlist.strings */,
 				3715B94E162F23330026E296 /* main.m */,
@@ -363,13 +397,15 @@
 				3715B955162F23330026E296 /* Default.png in Resources */,
 				3715B957162F23330026E296 /* Default@2x.png in Resources */,
 				3715B959162F23330026E296 /* Default-568h@2x.png in Resources */,
+				3AB75F7C17AAC12C007A6A62 /* overdrive~.pd_darwin in Resources */,
+				3AB75F8917AAC453007A6A62 /* sic.c in Resources */,
+				3AB75F8A17AAC457007A6A62 /* sic.h in Resources */,
 				3715B95C162F23330026E296 /* MainStoryboard_iPhone.storyboard in Resources */,
 				3715B95F162F23330026E296 /* MainStoryboard_iPad.storyboard in Resources */,
 				3AA9D8AF17A06D8E00E0DE70 /* 144x144.png in Resources */,
 				3AA9D8B117A06F9600E0DE70 /* 72x72.png in Resources */,
 				3A6B371817A19526002DC520 /* mag_template.pd in Resources */,
 				3A6B371717A19526002DC520 /* canvas_audio_generator.pd in Resources */,
-				3A6B371417A19441002DC520 /* reverb.pd in Resources */,
 				3A6B371C17A1A396002DC520 /* rev2~.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3715B974162F23340026E296 /* InfoPlist.strings in Resources */,
+				3AB75F7B17AAC08D007A6A62 /* overdrive~.pd_darwin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,12 +447,21 @@
 				3715B962162F23330026E296 /* MAGViewController.m in Sources */,
 				3A559D7F177DE8720035B7EF /* MAGCircle.m in Sources */,
 				3A9C0FB017835E4A00221F62 /* MAGBackground.m in Sources */,
+				3AB75F8B17AAC4FD007A6A62 /* loud.c in Sources */,
+				3AB75F8C17AAC500007A6A62 /* loud.h in Sources */,
+				3AB75F8D17AAC502007A6A62 /* m_pd.c in Sources */,
+				3AB75F8E17AAC506007A6A62 /* m_pd.h in Sources */,
+				3AB75F8F17AAC509007A6A62 /* shared.c in Sources */,
+				3AB75F9017AAC50C007A6A62 /* shared.h in Sources */,
+				3AB75F9117AAC50F007A6A62 /* sic.c in Sources */,
+				3AB75F9217AAC511007A6A62 /* sic.h in Sources */,
 				3A8937841785F93D005AD710 /* MAGSampleHandler.m in Sources */,
 				3A8937881785FA5A005AD710 /* MAGSample.m in Sources */,
 				3A89378B178600C9005AD710 /* MAGCircleArray.m in Sources */,
 				3A875F79178740C70053955D /* MAGGesture.m in Sources */,
 				3A8956311799BEF000788E9D /* MAGMainViewController.m in Sources */,
 				3AB75F7417A86145007A6A62 /* MAGNavigationController.m in Sources */,
+				3AB75F7617AAAA95007A6A62 /* overdrive.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +470,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3715B977162F23340026E296 /* Mobile_Music_TemplateTests.m in Sources */,
+				3AB75F8517AAC1EA007A6A62 /* loud.c in Sources */,
+				3AB75F8617AAC1EA007A6A62 /* m_pd.c in Sources */,
+				3AB75F8717AAC1EA007A6A62 /* shared.c in Sources */,
+				3AB75F8817AAC1EA007A6A62 /* sic.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

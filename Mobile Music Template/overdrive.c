@@ -4,7 +4,7 @@
 
 #include <math.h>
 #include "m_pd.h"
-#include "sickle/sic.h"
+#include "sic.h"
 
 /* FIXME this is unnecessary in vc > 6.0 and darwin? */
 #if defined(MSW) || defined(MACOSX)

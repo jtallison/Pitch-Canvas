@@ -23,6 +23,8 @@
 
 //void triangle_tilde_setup();
 
+void overdrive_tilde_setup();
+
 - (IBAction)handleLongPress:(UILongPressGestureRecognizer *)sender;
 
 @property (strong, nonatomic) IBOutlet MAGBackground *theBackground;
@@ -70,6 +72,7 @@
     dispatcher = [[PdDispatcher alloc] init];
     [PdBase setDelegate:dispatcher];
     //triangle_tilde_setup();
+    overdrive_tilde_setup();
     patch = [PdBase openFile:@"mag_template.pd" path:[[NSBundle mainBundle] resourcePath]];
     if (!patch) {
         NSLog(@"Failed to open patch!");

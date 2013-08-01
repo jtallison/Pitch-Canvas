@@ -7,8 +7,8 @@
 #include <math.h>
 #include "m_pd.h"
 #include "shared.h"
-#include "common/loud.h"
-#include "sickle/sic.h"
+#include "loud.h"
+#include "sic.h"
 
 #ifdef KRZYSZCZ
 //#define SIC_DEBUG
