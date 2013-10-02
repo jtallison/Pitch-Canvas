@@ -27,6 +27,29 @@
 		3715B993162F2F540026E296 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715B98D162F27620026E296 /* libpd-ios.a */; };
 		3715B9A2162F42C70026E296 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715B9A1162F42C70026E296 /* AudioToolbox.framework */; };
 		3715B9A4162F42CD0026E296 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715B9A3162F42CD0026E296 /* AVFoundation.framework */; };
+		37BCD1E517FB760100BEFF90 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1C517FB760100BEFF90 /* Icon-40.png */; };
+		37BCD1E617FB760100BEFF90 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1C617FB760100BEFF90 /* Icon-40@2x.png */; };
+		37BCD1E717FB760100BEFF90 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1C717FB760100BEFF90 /* Icon-60.png */; };
+		37BCD1E817FB760100BEFF90 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1C817FB760100BEFF90 /* Icon-60@2x.png */; };
+		37BCD1E917FB760100BEFF90 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1C917FB760100BEFF90 /* Icon-72.png */; };
+		37BCD1EA17FB760100BEFF90 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1CA17FB760100BEFF90 /* Icon-72@2x.png */; };
+		37BCD1EB17FB760100BEFF90 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1CB17FB760100BEFF90 /* Icon-76.png */; };
+		37BCD1EC17FB760100BEFF90 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1CC17FB760100BEFF90 /* Icon-76@2x.png */; };
+		37BCD1ED17FB760100BEFF90 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1CD17FB760100BEFF90 /* Icon-Small-50.png */; };
+		37BCD1EE17FB760100BEFF90 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1CE17FB760100BEFF90 /* Icon-Small-50@2x.png */; };
+		37BCD1EF17FB760100BEFF90 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1CF17FB760100BEFF90 /* Icon-Small.png */; };
+		37BCD1F017FB760100BEFF90 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1D017FB760100BEFF90 /* Icon-Small@2x.png */; };
+		37BCD1F117FB760100BEFF90 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1D117FB760100BEFF90 /* Icon.png */; };
+		37BCD1F217FB760100BEFF90 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1D217FB760100BEFF90 /* Icon@2x.png */; };
+		37BCD1F317FB760100BEFF90 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1D317FB760100BEFF90 /* iTunesArtwork.png */; };
+		37BCD1F417FB760100BEFF90 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1D417FB760100BEFF90 /* iTunesArtwork@2x.png */; };
+		37BCD1F617FB763100BEFF90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1F517FB763100BEFF90 /* Images.xcassets */; };
+		37BCD1FD17FB813D00BEFF90 /* PitchCanvas640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1F717FB813D00BEFF90 /* PitchCanvas640x960.png */; };
+		37BCD1FE17FB813D00BEFF90 /* PitchCanvas640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1F817FB813D00BEFF90 /* PitchCanvas640x1136.png */; };
+		37BCD1FF17FB813D00BEFF90 /* PitchCanvas768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1F917FB813D00BEFF90 /* PitchCanvas768x1024.png */; };
+		37BCD20017FB813D00BEFF90 /* PitchCanvas1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1FA17FB813D00BEFF90 /* PitchCanvas1024x768.png */; };
+		37BCD20117FB813D00BEFF90 /* PitchCanvas1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1FB17FB813D00BEFF90 /* PitchCanvas1536x2048.png */; };
+		37BCD20217FB813D00BEFF90 /* PitchCanvas2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1FC17FB813D00BEFF90 /* PitchCanvas2048x1536.png */; };
 		3A559D7F177DE8720035B7EF /* MAGCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A559D7E177DE8720035B7EF /* MAGCircle.m */; };
 		3A6B371717A19526002DC520 /* canvas_audio_generator.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B371517A19526002DC520 /* canvas_audio_generator.pd */; };
 		3A6B371817A19526002DC520 /* mag_template.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B371617A19526002DC520 /* mag_template.pd */; };
@@ -37,8 +60,6 @@
 		3A89378B178600C9005AD710 /* MAGCircleArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A89378A178600C9005AD710 /* MAGCircleArray.m */; };
 		3A8956311799BEF000788E9D /* MAGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8956301799BEF000788E9D /* MAGMainViewController.m */; };
 		3A9C0FB017835E4A00221F62 /* MAGBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C0FAF17835E4A00221F62 /* MAGBackground.m */; };
-		3AA9D8AF17A06D8E00E0DE70 /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA9D8AE17A06D8E00E0DE70 /* 144x144.png */; };
-		3AA9D8B117A06F9600E0DE70 /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA9D8B017A06F9600E0DE70 /* 72x72.png */; };
 		3AB75F7417A86145007A6A62 /* MAGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7317A86145007A6A62 /* MAGNavigationController.m */; };
 		3AB75F7617AAAA95007A6A62 /* overdrive.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB75F7517AAAA95007A6A62 /* overdrive.c */; };
 		3AB75F7B17AAC08D007A6A62 /* overdrive~.pd_darwin in Resources */ = {isa = PBXBuildFile; fileRef = 3AB75F7A17AAC08D007A6A62 /* overdrive~.pd_darwin */; };
@@ -91,14 +112,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3715B93E162F23330026E296 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3715B93E162F23330026E296 /* PitchCanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3715B942162F23330026E296 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3715B944162F23330026E296 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3715B946162F23330026E296 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3715B94A162F23330026E296 /* Canvas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Canvas-Info.plist"; sourceTree = "<group>"; };
+		3715B94A162F23330026E296 /* PitchCanvas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PitchCanvas-Info.plist"; sourceTree = "<group>"; };
 		3715B94C162F23330026E296 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3715B94E162F23330026E296 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3715B950162F23330026E296 /* Canvas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Canvas-Prefix.pch"; sourceTree = "<group>"; };
+		3715B950162F23330026E296 /* PitchCanvas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PitchCanvas-Prefix.pch"; sourceTree = "<group>"; };
 		3715B951162F23330026E296 /* MAGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAGAppDelegate.h; sourceTree = "<group>"; };
 		3715B952162F23330026E296 /* MAGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAGAppDelegate.m; sourceTree = "<group>"; };
 		3715B954162F23330026E296 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -108,15 +129,38 @@
 		3715B95E162F23330026E296 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		3715B960162F23330026E296 /* MAGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAGViewController.h; sourceTree = "<group>"; };
 		3715B961162F23330026E296 /* MAGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAGViewController.m; sourceTree = "<group>"; };
-		3715B968162F23330026E296 /* CanvasTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3715B968162F23330026E296 /* PitchCanvasTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchCanvasTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3715B969162F23330026E296 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3715B971162F23340026E296 /* CanvasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CanvasTests-Info.plist"; sourceTree = "<group>"; };
+		3715B971162F23340026E296 /* PitchCanvasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PitchCanvasTests-Info.plist"; sourceTree = "<group>"; };
 		3715B973162F23340026E296 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3715B975162F23340026E296 /* Mobile_Music_TemplateTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mobile_Music_TemplateTests.h; sourceTree = "<group>"; };
 		3715B976162F23340026E296 /* Mobile_Music_TemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mobile_Music_TemplateTests.m; sourceTree = "<group>"; };
 		3715B984162F27620026E296 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = libpd/libpd.xcodeproj; sourceTree = "<group>"; };
 		3715B9A1162F42C70026E296 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3715B9A3162F42CD0026E296 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		37BCD1C517FB760100BEFF90 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		37BCD1C617FB760100BEFF90 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		37BCD1C717FB760100BEFF90 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		37BCD1C817FB760100BEFF90 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		37BCD1C917FB760100BEFF90 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		37BCD1CA17FB760100BEFF90 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		37BCD1CB17FB760100BEFF90 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		37BCD1CC17FB760100BEFF90 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		37BCD1CD17FB760100BEFF90 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		37BCD1CE17FB760100BEFF90 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		37BCD1CF17FB760100BEFF90 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		37BCD1D017FB760100BEFF90 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		37BCD1D117FB760100BEFF90 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		37BCD1D217FB760100BEFF90 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		37BCD1D317FB760100BEFF90 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		37BCD1D417FB760100BEFF90 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		37BCD1F517FB763100BEFF90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PitchCanvas/Images.xcassets; sourceTree = "<group>"; };
+		37BCD1F717FB813D00BEFF90 /* PitchCanvas640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PitchCanvas640x960.png; sourceTree = "<group>"; };
+		37BCD1F817FB813D00BEFF90 /* PitchCanvas640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PitchCanvas640x1136.png; sourceTree = "<group>"; };
+		37BCD1F917FB813D00BEFF90 /* PitchCanvas768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PitchCanvas768x1024.png; sourceTree = "<group>"; };
+		37BCD1FA17FB813D00BEFF90 /* PitchCanvas1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PitchCanvas1024x768.png; sourceTree = "<group>"; };
+		37BCD1FB17FB813D00BEFF90 /* PitchCanvas1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PitchCanvas1536x2048.png; sourceTree = "<group>"; };
+		37BCD1FC17FB813D00BEFF90 /* PitchCanvas2048x1536.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PitchCanvas2048x1536.png; sourceTree = "<group>"; };
 		3A559D7D177DE8720035B7EF /* MAGCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGCircle.h; sourceTree = "<group>"; };
 		3A559D7E177DE8720035B7EF /* MAGCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGCircle.m; sourceTree = "<group>"; };
 		3A6B371517A19526002DC520 /* canvas_audio_generator.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = canvas_audio_generator.pd; sourceTree = "<group>"; };
@@ -134,8 +178,6 @@
 		3A8956301799BEF000788E9D /* MAGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGMainViewController.m; sourceTree = "<group>"; };
 		3A9C0FAE17835E4A00221F62 /* MAGBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGBackground.h; sourceTree = "<group>"; };
 		3A9C0FAF17835E4A00221F62 /* MAGBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGBackground.m; sourceTree = "<group>"; };
-		3AA9D8AE17A06D8E00E0DE70 /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144x144.png; sourceTree = "<group>"; };
-		3AA9D8B017A06F9600E0DE70 /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
 		3AB75F7217A86145007A6A62 /* MAGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGNavigationController.h; sourceTree = "<group>"; };
 		3AB75F7317A86145007A6A62 /* MAGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGNavigationController.m; sourceTree = "<group>"; };
 		3AB75F7517AAAA95007A6A62 /* overdrive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = overdrive.c; sourceTree = "<group>"; };
@@ -180,8 +222,7 @@
 		3715B933162F23330026E296 = {
 			isa = PBXGroup;
 			children = (
-				3AA9D8B017A06F9600E0DE70 /* 72x72.png */,
-				3AA9D8AE17A06D8E00E0DE70 /* 144x144.png */,
+				37BCD1F517FB763100BEFF90 /* Images.xcassets */,
 				3715B9A3162F42CD0026E296 /* AVFoundation.framework */,
 				3715B9A1162F42C70026E296 /* AudioToolbox.framework */,
 				3715B984162F27620026E296 /* libpd.xcodeproj */,
@@ -195,8 +236,8 @@
 		3715B93F162F23330026E296 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3715B93E162F23330026E296 /* Canvas.app */,
-				3715B968162F23330026E296 /* CanvasTests.octest */,
+				3715B93E162F23330026E296 /* PitchCanvas.app */,
+				3715B968162F23330026E296 /* PitchCanvasTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +256,8 @@
 		3715B948162F23330026E296 /* Mobile Music Template */ = {
 			isa = PBXGroup;
 			children = (
+				37BCD1AC17FB760100BEFF90 /* icon */,
+				37BCD1AB17FB6D4500BEFF90 /* images */,
 				3715B951162F23330026E296 /* MAGAppDelegate.h */,
 				3715B952162F23330026E296 /* MAGAppDelegate.m */,
 				3715B95A162F23330026E296 /* MainStoryboard_iPhone.storyboard */,
@@ -255,13 +298,13 @@
 				3AB75F8217AAC1EA007A6A62 /* shared.h */,
 				3AB75F8317AAC1EA007A6A62 /* sic.c */,
 				3AB75F8417AAC1EA007A6A62 /* sic.h */,
-				3715B94A162F23330026E296 /* Canvas-Info.plist */,
+				3715B94A162F23330026E296 /* PitchCanvas-Info.plist */,
 				3AB75F7A17AAC08D007A6A62 /* overdrive~.pd_darwin */,
 				3AB75F7517AAAA95007A6A62 /* overdrive.c */,
 				3A6B371B17A1A396002DC520 /* rev2~.pd */,
 				3715B94B162F23330026E296 /* InfoPlist.strings */,
 				3715B94E162F23330026E296 /* main.m */,
-				3715B950162F23330026E296 /* Canvas-Prefix.pch */,
+				3715B950162F23330026E296 /* PitchCanvas-Prefix.pch */,
 				3715B954162F23330026E296 /* Default.png */,
 				3715B956162F23330026E296 /* Default@2x.png */,
 				3715B958162F23330026E296 /* Default-568h@2x.png */,
@@ -282,7 +325,7 @@
 		3715B970162F23340026E296 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3715B971162F23340026E296 /* CanvasTests-Info.plist */,
+				3715B971162F23340026E296 /* PitchCanvasTests-Info.plist */,
 				3715B972162F23340026E296 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -297,12 +340,56 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		37BCD1AB17FB6D4500BEFF90 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				37BCD1F717FB813D00BEFF90 /* PitchCanvas640x960.png */,
+				37BCD1F817FB813D00BEFF90 /* PitchCanvas640x1136.png */,
+				37BCD1F917FB813D00BEFF90 /* PitchCanvas768x1024.png */,
+				37BCD1FA17FB813D00BEFF90 /* PitchCanvas1024x768.png */,
+				37BCD1FB17FB813D00BEFF90 /* PitchCanvas1536x2048.png */,
+				37BCD1FC17FB813D00BEFF90 /* PitchCanvas2048x1536.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		37BCD1AC17FB760100BEFF90 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				37BCD1C417FB760100BEFF90 /* ios7 */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		37BCD1C417FB760100BEFF90 /* ios7 */ = {
+			isa = PBXGroup;
+			children = (
+				37BCD1C517FB760100BEFF90 /* Icon-40.png */,
+				37BCD1C617FB760100BEFF90 /* Icon-40@2x.png */,
+				37BCD1C717FB760100BEFF90 /* Icon-60.png */,
+				37BCD1C817FB760100BEFF90 /* Icon-60@2x.png */,
+				37BCD1C917FB760100BEFF90 /* Icon-72.png */,
+				37BCD1CA17FB760100BEFF90 /* Icon-72@2x.png */,
+				37BCD1CB17FB760100BEFF90 /* Icon-76.png */,
+				37BCD1CC17FB760100BEFF90 /* Icon-76@2x.png */,
+				37BCD1CD17FB760100BEFF90 /* Icon-Small-50.png */,
+				37BCD1CE17FB760100BEFF90 /* Icon-Small-50@2x.png */,
+				37BCD1CF17FB760100BEFF90 /* Icon-Small.png */,
+				37BCD1D017FB760100BEFF90 /* Icon-Small@2x.png */,
+				37BCD1D117FB760100BEFF90 /* Icon.png */,
+				37BCD1D217FB760100BEFF90 /* Icon@2x.png */,
+				37BCD1D317FB760100BEFF90 /* iTunesArtwork.png */,
+				37BCD1D417FB760100BEFF90 /* iTunesArtwork@2x.png */,
+			);
+			path = ios7;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3715B93D162F23330026E296 /* Canvas */ = {
+		3715B93D162F23330026E296 /* PitchCanvas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3715B97A162F23340026E296 /* Build configuration list for PBXNativeTarget "Canvas" */;
+			buildConfigurationList = 3715B97A162F23340026E296 /* Build configuration list for PBXNativeTarget "PitchCanvas" */;
 			buildPhases = (
 				3715B93A162F23330026E296 /* Sources */,
 				3715B93B162F23330026E296 /* Frameworks */,
@@ -313,14 +400,14 @@
 			dependencies = (
 				3715B992162F2F290026E296 /* PBXTargetDependency */,
 			);
-			name = Canvas;
+			name = PitchCanvas;
 			productName = "Mobile Music Template";
-			productReference = 3715B93E162F23330026E296 /* Canvas.app */;
+			productReference = 3715B93E162F23330026E296 /* PitchCanvas.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3715B967162F23330026E296 /* CanvasTests */ = {
+		3715B967162F23330026E296 /* PitchCanvasTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3715B97D162F23340026E296 /* Build configuration list for PBXNativeTarget "CanvasTests" */;
+			buildConfigurationList = 3715B97D162F23340026E296 /* Build configuration list for PBXNativeTarget "PitchCanvasTests" */;
 			buildPhases = (
 				3715B963162F23330026E296 /* Sources */,
 				3715B964162F23330026E296 /* Frameworks */,
@@ -332,9 +419,9 @@
 			dependencies = (
 				3715B96E162F23330026E296 /* PBXTargetDependency */,
 			);
-			name = CanvasTests;
+			name = PitchCanvasTests;
 			productName = "Mobile Music TemplateTests";
-			productReference = 3715B968162F23330026E296 /* CanvasTests.octest */;
+			productReference = 3715B968162F23330026E296 /* PitchCanvasTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -347,7 +434,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = MAG;
 			};
-			buildConfigurationList = 3715B938162F23330026E296 /* Build configuration list for PBXProject "Canvas" */;
+			buildConfigurationList = 3715B938162F23330026E296 /* Build configuration list for PBXProject "PitchCanvas" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -365,8 +452,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				3715B93D162F23330026E296 /* Canvas */,
-				3715B967162F23330026E296 /* CanvasTests */,
+				3715B93D162F23330026E296 /* PitchCanvas */,
+				3715B967162F23330026E296 /* PitchCanvasTests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,18 +482,39 @@
 			files = (
 				3715B94D162F23330026E296 /* InfoPlist.strings in Resources */,
 				3715B955162F23330026E296 /* Default.png in Resources */,
+				37BCD1FF17FB813D00BEFF90 /* PitchCanvas768x1024.png in Resources */,
 				3715B957162F23330026E296 /* Default@2x.png in Resources */,
 				3715B959162F23330026E296 /* Default-568h@2x.png in Resources */,
+				37BCD1F117FB760100BEFF90 /* Icon.png in Resources */,
+				37BCD1EF17FB760100BEFF90 /* Icon-Small.png in Resources */,
 				3AB75F7C17AAC12C007A6A62 /* overdrive~.pd_darwin in Resources */,
 				3AB75F8917AAC453007A6A62 /* sic.c in Resources */,
+				37BCD1E617FB760100BEFF90 /* Icon-40@2x.png in Resources */,
+				37BCD1EC17FB760100BEFF90 /* Icon-76@2x.png in Resources */,
+				37BCD1F217FB760100BEFF90 /* Icon@2x.png in Resources */,
+				37BCD1E717FB760100BEFF90 /* Icon-60.png in Resources */,
+				37BCD20217FB813D00BEFF90 /* PitchCanvas2048x1536.png in Resources */,
+				37BCD1FD17FB813D00BEFF90 /* PitchCanvas640x960.png in Resources */,
+				37BCD20017FB813D00BEFF90 /* PitchCanvas1024x768.png in Resources */,
 				3AB75F8A17AAC457007A6A62 /* sic.h in Resources */,
 				3715B95C162F23330026E296 /* MainStoryboard_iPhone.storyboard in Resources */,
+				37BCD1EE17FB760100BEFF90 /* Icon-Small-50@2x.png in Resources */,
 				3715B95F162F23330026E296 /* MainStoryboard_iPad.storyboard in Resources */,
-				3AA9D8AF17A06D8E00E0DE70 /* 144x144.png in Resources */,
-				3AA9D8B117A06F9600E0DE70 /* 72x72.png in Resources */,
+				37BCD1FE17FB813D00BEFF90 /* PitchCanvas640x1136.png in Resources */,
+				37BCD20117FB813D00BEFF90 /* PitchCanvas1536x2048.png in Resources */,
+				37BCD1E517FB760100BEFF90 /* Icon-40.png in Resources */,
+				37BCD1F317FB760100BEFF90 /* iTunesArtwork.png in Resources */,
+				37BCD1EA17FB760100BEFF90 /* Icon-72@2x.png in Resources */,
 				3A6B371817A19526002DC520 /* mag_template.pd in Resources */,
 				3A6B371717A19526002DC520 /* canvas_audio_generator.pd in Resources */,
+				37BCD1E917FB760100BEFF90 /* Icon-72.png in Resources */,
 				3A6B371C17A1A396002DC520 /* rev2~.pd in Resources */,
+				37BCD1F017FB760100BEFF90 /* Icon-Small@2x.png in Resources */,
+				37BCD1F617FB763100BEFF90 /* Images.xcassets in Resources */,
+				37BCD1E817FB760100BEFF90 /* Icon-60@2x.png in Resources */,
+				37BCD1EB17FB760100BEFF90 /* Icon-76.png in Resources */,
+				37BCD1ED17FB760100BEFF90 /* Icon-Small-50.png in Resources */,
+				37BCD1F417FB760100BEFF90 /* iTunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +590,7 @@
 /* Begin PBXTargetDependency section */
 		3715B96E162F23330026E296 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3715B93D162F23330026E296 /* Canvas */;
+			target = 3715B93D162F23330026E296 /* PitchCanvas */;
 			targetProxy = 3715B96D162F23330026E296 /* PBXContainerItemProxy */;
 		};
 		3715B992162F2F290026E296 /* PBXTargetDependency */ = {
@@ -583,12 +691,15 @@
 		3715B97B162F23340026E296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mobile Music Template/Canvas-Prefix.pch";
-				INFOPLIST_FILE = "Mobile Music Template/Canvas-Info.plist";
+				GCC_PREFIX_HEADER = "Mobile Music Template/PitchCanvas-Prefix.pch";
+				INFOPLIST_FILE = "Mobile Music Template/PitchCanvas-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				"OTHER_CFLAGS[arch=*]" = "-DPD";
-				PRODUCT_NAME = Canvas;
+				PRODUCT_NAME = PitchCanvas;
+				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -597,12 +708,15 @@
 		3715B97C162F23340026E296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Mobile Music Template/Canvas-Prefix.pch";
-				INFOPLIST_FILE = "Mobile Music Template/Canvas-Info.plist";
+				GCC_PREFIX_HEADER = "Mobile Music Template/PitchCanvas-Prefix.pch";
+				INFOPLIST_FILE = "Mobile Music Template/PitchCanvas-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				"OTHER_CFLAGS[arch=*]" = "-DPD";
-				PRODUCT_NAME = Canvas;
+				PRODUCT_NAME = PitchCanvas;
+				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -618,8 +732,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mobile Music Template/Mobile Music Template-Prefix.pch";
-				INFOPLIST_FILE = "Mobile Music TemplateTests/CanvasTests-Info.plist";
-				PRODUCT_NAME = CanvasTests;
+				INFOPLIST_FILE = "Mobile Music TemplateTests/PitchCanvasTests-Info.plist";
+				PRODUCT_NAME = PitchCanvasTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -635,8 +749,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mobile Music Template/Mobile Music Template-Prefix.pch";
-				INFOPLIST_FILE = "Mobile Music TemplateTests/CanvasTests-Info.plist";
-				PRODUCT_NAME = CanvasTests;
+				INFOPLIST_FILE = "Mobile Music TemplateTests/PitchCanvasTests-Info.plist";
+				PRODUCT_NAME = PitchCanvasTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -645,7 +759,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3715B938162F23330026E296 /* Build configuration list for PBXProject "Canvas" */ = {
+		3715B938162F23330026E296 /* Build configuration list for PBXProject "PitchCanvas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3715B978162F23340026E296 /* Debug */,
@@ -654,7 +768,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3715B97A162F23340026E296 /* Build configuration list for PBXNativeTarget "Canvas" */ = {
+		3715B97A162F23340026E296 /* Build configuration list for PBXNativeTarget "PitchCanvas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3715B97B162F23340026E296 /* Debug */,
@@ -663,7 +777,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3715B97D162F23340026E296 /* Build configuration list for PBXNativeTarget "CanvasTests" */ = {
+		3715B97D162F23340026E296 /* Build configuration list for PBXNativeTarget "PitchCanvasTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3715B97E162F23340026E296 /* Debug */,
