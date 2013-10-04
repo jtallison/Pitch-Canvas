@@ -113,6 +113,13 @@ void overdrive_tilde_setup();
 - (IBAction)handleLongPress:(UILongPressGestureRecognizer *)sender
 {
     //nothing currently happening here
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        NSLog(@"UIGestureRecognizerStateEnded");
+        //Do Whatever You want on End of Gesture
+        if (sender.view == @"setupScreen") {
+            [[self navigationController] popViewControllerAnimated:YES];
+        }
+    }
 }
 
 - (void)initializeAttributes

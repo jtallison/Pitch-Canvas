@@ -11,6 +11,8 @@
 
 @interface MAGMainViewController ()
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *baseRange;
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *keySwitch;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *shiftSwitch;
@@ -53,7 +55,7 @@
 {
     if ([segue.identifier isEqualToString:@"loadCanvas"])
     {
-        [segue.destinationViewController setBaseKey:([self.keySwitch selectedSegmentIndex] + 69.0)];
+        [segue.destinationViewController setBaseKey:([self.keySwitch selectedSegmentIndex] + 45 + (12 * [self.baseRange selectedSegmentIndex]))];
         [segue.destinationViewController setCircleSize:([self.sizeSwitch selectedSegmentIndex]*50.0 + 50.0)];
         [segue.destinationViewController setShift:([self.shiftSwitch selectedSegmentIndex])];
     }
