@@ -26,6 +26,7 @@
 void overdrive_tilde_setup();
 
 - (IBAction)handleLongPress:(UILongPressGestureRecognizer *)sender;
+- (IBAction)backToSetup:(UIButton *)sender;
 
 @property (strong, nonatomic) IBOutlet MAGBackground *theBackground;
 
@@ -120,6 +121,11 @@ void overdrive_tilde_setup();
             [[self navigationController] popViewControllerAnimated:YES];
         }
     }
+    // NSLog(@"WHATTTT?????");
+}
+
+- (IBAction)backToSetup:(UIButton *)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)initializeAttributes

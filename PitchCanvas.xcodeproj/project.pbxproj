@@ -27,6 +27,7 @@
 		3715B993162F2F540026E296 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715B98D162F27620026E296 /* libpd-ios.a */; };
 		3715B9A2162F42C70026E296 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715B9A1162F42C70026E296 /* AudioToolbox.framework */; };
 		3715B9A4162F42CD0026E296 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3715B9A3162F42CD0026E296 /* AVFoundation.framework */; };
+		37600CA7180BA10000934FE2 /* MAGInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37600CA6180BA10000934FE2 /* MAGInfoViewController.m */; };
 		37BCD1E517FB760100BEFF90 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1C517FB760100BEFF90 /* Icon-40.png */; };
 		37BCD1E617FB760100BEFF90 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1C617FB760100BEFF90 /* Icon-40@2x.png */; };
 		37BCD1E717FB760100BEFF90 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 37BCD1C717FB760100BEFF90 /* Icon-60.png */; };
@@ -138,6 +139,8 @@
 		3715B984162F27620026E296 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = libpd/libpd.xcodeproj; sourceTree = "<group>"; };
 		3715B9A1162F42C70026E296 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3715B9A3162F42CD0026E296 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		37600CA5180BA10000934FE2 /* MAGInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGInfoViewController.h; sourceTree = "<group>"; };
+		37600CA6180BA10000934FE2 /* MAGInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAGInfoViewController.m; sourceTree = "<group>"; };
 		37BCD1C517FB760100BEFF90 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
 		37BCD1C617FB760100BEFF90 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
 		37BCD1C717FB760100BEFF90 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 				3715B952162F23330026E296 /* MAGAppDelegate.m */,
 				3715B95A162F23330026E296 /* MainStoryboard_iPhone.storyboard */,
 				3715B95D162F23330026E296 /* MainStoryboard_iPad.storyboard */,
+				37600CA5180BA10000934FE2 /* MAGInfoViewController.h */,
+				37600CA6180BA10000934FE2 /* MAGInfoViewController.m */,
 				3AB75F7217A86145007A6A62 /* MAGNavigationController.h */,
 				3AB75F7317A86145007A6A62 /* MAGNavigationController.m */,
 				3A89562F1799BEF000788E9D /* MAGMainViewController.h */,
@@ -558,6 +563,7 @@
 				3AB75F8B17AAC4FD007A6A62 /* loud.c in Sources */,
 				3AB75F8C17AAC500007A6A62 /* loud.h in Sources */,
 				3AB75F8D17AAC502007A6A62 /* m_pd.c in Sources */,
+				37600CA7180BA10000934FE2 /* MAGInfoViewController.m in Sources */,
 				3AB75F8E17AAC506007A6A62 /* m_pd.h in Sources */,
 				3AB75F8F17AAC509007A6A62 /* shared.c in Sources */,
 				3AB75F9017AAC50C007A6A62 /* shared.h in Sources */,
@@ -700,7 +706,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				"OTHER_CFLAGS[arch=*]" = "-DPD";
 				PRODUCT_NAME = PitchCanvas;
-				PROVISIONING_PROFILE = "98823000-4C2E-45D2-8E8E-16FE8F219E4A";
+				PROVISIONING_PROFILE = "AA32312C-F303-40AE-8876-22D0079D832B";
 				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "libpd/**";
 				WRAPPER_EXTENSION = app;
@@ -719,7 +725,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				"OTHER_CFLAGS[arch=*]" = "-DPD";
 				PRODUCT_NAME = PitchCanvas;
-				PROVISIONING_PROFILE = "98823000-4C2E-45D2-8E8E-16FE8F219E4A";
+				PROVISIONING_PROFILE = "AA32312C-F303-40AE-8876-22D0079D832B";
 				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "libpd/**";
 				WRAPPER_EXTENSION = app;
